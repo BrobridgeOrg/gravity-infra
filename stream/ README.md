@@ -8,6 +8,7 @@
 * 3. [Stream Benchmark](#StreamBenchmark)
 	* 3.1. [Replicated Stream Benchmark](#ReplicatedStreamBenchmark)
 		* 3.1.1. [TestReplicatedStream Benchmark Result](#TestReplicatedStreamBenchmarkResult)
+		* 3.1.2. [TestReplicatedStream Benchmark when scaling Consumer](#TestReplicatedStreamBenchmarkwhenscalingConsumer)
 	* 3.2. [Single Stream Benchmark](#SingleStreamBenchmark)
 		* 3.2.1. [Single Stream Benchmark Benchmark Result](#SingleStreamBenchmarkBenchmarkResult)
 * 4. [KV Benchmark](#KVBenchmark)
@@ -95,6 +96,17 @@ NATS Pub/Sub stats: 87,742 msgs/sec ~ 10.71 MB/sec
 ```
 nats stream delete benchstream
 ```
+
+####  3.1.2. <a name='TestReplicatedStreamBenchmarkwhenscalingConsumer'></a>TestReplicatedStream Benchmark when scaling Consumer
+| #Consumer | 1      | 2      | 3      | 4      | 5      | 6      | 7      | 8      |
+|-----------|--------|--------|--------|--------|--------|--------|--------|--------|
+| TPS (Sub) | 43,071 | 31,997 | 37,569 | 31,295 | 29,435 | 27,326 | 24,388 | 26,511 |
+
+
+| #Consumer | 16     | 32     | 64     | 128    | 256    | 512    | 1024   | 2048   |
+|-----------|--------|--------|--------|--------|--------|--------|--------|--------|
+| TPS (Sub) | 23,131 | 32,535 | 35,041 | N/A    | N/A    | N/A    | N/A    | N/A    |
+
 
 ###  3.2. <a name='SingleStreamBenchmark'></a>Single Stream Benchmark
 以下是 Stream Benchmark 的指令，建立一個 Single Stream Benchmark 以下 flags 來模擬特定場景。
