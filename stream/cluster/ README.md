@@ -1,6 +1,5 @@
 
-
-# NATS/JetStream
+# NATS/JetStream Cluster
 
 <!-- vscode-markdown-toc -->
 * 1. [Pre-require](#Pre-require)

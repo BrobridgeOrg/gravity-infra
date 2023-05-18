@@ -1,0 +1,3 @@
+hub-0: ./../../nats-server -c ./../conf/hub-0.conf -D
+hub-1: ./../../nats-server -c ./../conf/hub-1.conf -D
+hub-2: ./../../nats-server -c ./../conf/hub-2.conf -D

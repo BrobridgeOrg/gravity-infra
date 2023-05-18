@@ -1,0 +1,3 @@
+leaf-domain-a-0: ./../../nats-server -c ./../conf/leaf-domain-a-0.conf -D
+leaf-domain-a-1: ./../../nats-server -c ./../conf/leaf-domain-a-1.conf -D
+leaf-domain-a-2: ./../../nats-server -c ./../conf/leaf-domain-a-2.conf -D

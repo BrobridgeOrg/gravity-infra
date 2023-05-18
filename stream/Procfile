@@ -1,4 +1,0 @@
-jet-stream-0: ./nats-server -c conf/jetstream-0.conf -D
-jet-stream-1: ./nats-server -c conf/jetstream-1.conf -D
-jet-stream-2: ./nats-server -c conf/jetstream-2.conf -D
-
